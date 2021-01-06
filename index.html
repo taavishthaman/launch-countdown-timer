@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body id="result">
+  <div class="stars">
+    <div>
+      <h1 class="title">Company Name</h1>
+    </div>
+    <div class="upper-text">
+      <h3>WE'RE LAUNCHING SOON</h3>
+    </div>
+    <div class="time-div">
+      <div class="card-div">
+        <div class="day-card">
+          <h1 class="days"></h1>
+        </div>
+        <h3>Days</h3>
+      </div>
+      <div class="card-div">
+        <div class="hour-card">
+          <h1 class="hours"></h1>
+        </div>
+        <h3>Hours</h3>
+      </div>
+      <div class="card-div">
+        <div class="minute-card">
+          <h1 class="minutes"></h1>
+        </div>
+        <h3>Minutes</h3>
+      </div>
+      <div class="card-div">
+        <div class="second-card">
+          <h1 class="seconds"></h1>
+        </div>
+        <h3>Seconds</h3>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="social">
+        <a href=""><img class="fb-icon social-logo" src="images/icon-facebook.svg" /></a>
+        <a href=""><img class="ig-icon social-logo" src="images/icon-instagram.svg" /></a>
+        <a href=""><img class="pi-icon social-logo" src="images/icon-pinterest.svg"/></a>
+      </div>
+    </div>
+  </div>
+    <script>
+      window.setInterval(function(){
+      /// call your function here
+      var curdate = new Date();
+      var date = new Date(2021, 3, 6);
+
+      var time = Math.floor((date - curdate)/1000);
+
+      console.log(time)
+      var seconds = time%60;
+      var minutes = Math.floor((time/60)%60);
+      var hours = Math.floor((time/3600)%60);
+      var days = Math.floor((time/86400));
+
+      document.getElementsByClassName("seconds")[0].innerHTML = seconds;
+      document.getElementsByClassName("minutes")[0].innerHTML = minutes;
+      document.getElementsByClassName("hours")[0].innerHTML = hours;
+      document.getElementsByClassName("days")[0].innerHTML = days;
+      }, 1000);
+    </script>
+</body>
+</html>

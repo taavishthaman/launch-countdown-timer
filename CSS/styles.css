@@ -1,0 +1,127 @@
+@keyframes kf-color-mix {
+  0% { color: hsl(234, 17%, 12%) }
+  100% { color: hsl(345, 95%, 68%) }
+}
+
+#result {
+  height: 20px;
+  margin-top: 10px;
+  animation: kf-color-mix 1s -.1s linear forwards paused;
+  background: currentColor;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+body{
+  text-align: center;
+  margin: 0;
+}
+
+h3{
+  color: white;
+}
+
+.stars{
+  background: url("../images/bg-stars.svg");
+}
+
+.footer{
+  background: url("../images/pattern-hills.svg");
+  position: relative;
+  margin-top: 3%;
+  height: 170px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.upper-text{
+  margin-top: 5%;
+  letter-spacing: 10px;
+}
+
+.day-card{
+  width: 140px;
+  height: 140px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.hour-card{
+  width: 140px;
+  height: 140px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.minute-card{
+  width: 140px;
+  height: 140px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.second-card{
+  width: 140px;
+  height: 140px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.card-div{
+  display: inline-block;
+  margin: 2%;
+}
+
+.time-div{
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.days{
+  color: hsl(345, 95%, 68%);
+  text-align: center;
+  font-size: 90px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.hours{
+  color: hsl(345, 95%, 68%);
+  text-align: center;
+  font-size: 90px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.minutes{
+  color: hsl(345, 95%, 68%);
+  text-align: center;
+  font-size: 90px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.seconds{
+  color: hsl(345, 95%, 68%);
+  text-align: center;
+  font-size: 90px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.title{
+  margin-top: 0;
+  color: hsl(345, 95%, 68%);
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.social{
+  position: relative;
+  top: 70px;
+}
+
+.social-logo{
+  padding: 0 20px 0 20px;
+}
