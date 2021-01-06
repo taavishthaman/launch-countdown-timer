@@ -65,7 +65,7 @@
       console.log(time)
       var seconds = time%60;
       var minutes = Math.floor((time/60)%60);
-      var hours = Math.floor((time/3600)%60);
+      var hours = Math.floor((time/3600)%24);
       var days = Math.floor((time/86400));
 
       document.getElementsByClassName("seconds")[0].innerHTML = seconds;
